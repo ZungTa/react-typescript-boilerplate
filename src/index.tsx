@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { RootStoreProvider } from '@/store/RootStore';
 import { BrowserRouter } from 'react-router-dom';
 
+import '@/config/lang/i18n';
+
 ReactDOM.render(
   <React.StrictMode>
     <RootStoreProvider>
