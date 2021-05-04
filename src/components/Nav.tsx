@@ -8,6 +8,7 @@ function Nav() {
     <div css={navCss}>
       <div className="nav-container">
         <h1>Nav, {t('name')}</h1>
+        <div>{t('obj.change', { name: 'ZungTa' })}</div>
       </div>
     </div>
   );

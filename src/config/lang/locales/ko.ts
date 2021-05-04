@@ -4,7 +4,7 @@ const lang = {
   hello: '안녕',
   obj: {
     his: '히스',
-    change: 'my name is {{ name }}',
+    change: 'my name is {{ name }}', // i18next Plurals
   },
 
   // real
