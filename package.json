@@ -151,12 +151,12 @@
     "resetMocks": true
   },
   "babel": {
-   "presets": [
-     "react-app",
-     "@emotion/babel-preset-css-prop"
+    "presets": [
+      "react-app",
+      "@emotion/babel-preset-css-prop"
     ],
-   "plugins": [
-     "@emotion"
+    "plugins": [
+      "@emotion"
     ]
   }
 }
