@@ -1,0 +1,50 @@
+@mixin fontFamily {
+  font-family: 'NanumBarunGothic', 'Nanum Gothic', sans-serif;
+}
+
+body {
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  //   "Droid Sans", "Helvetica Neue", sans-serif;
+  // font-family: 'NanumBarunGothic', 'Nanum Gothic', sans-serif;
+  @include fontFamily();
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  border-width: 0px;
+  border-style: solid;
+}
+
+input {
+  @include fontFamily();
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+// img가 인라인이라서 하단에 공백이 생김
+img {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+:root {
+  font-size: 10px;
+  // 1rem === 10px
+}
+
