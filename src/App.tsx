@@ -1,17 +1,28 @@
 import { css } from '@emotion/react';
+import { Switch, Route } from 'react-router-dom';
+import Footer from '@/components/Footer';
+import Nav from '@/components/Nav';
+import ScrollToTop from '@/components/ScrollToTop';
+import NotFound from '@/pages/NotFound';
+import SamplePage from '@/pages/SamplePage';
 
 function App() {
   return (
-    <div className="App">
-      <div css={boxCss}></div>
+    <div css={appCss}>
+      <Nav />
+      <div className="content-container">
+        <ScrollToTop />
+        <Switch>
+          <Route path="/" exact component={SamplePage} />
+
+          <Route path="*" component={NotFound} />
+        </Switch>
+      </div>
+      <Footer />
     </div>
   );
 }
 
-const boxCss = css`
-  width: 200px;
-  height: 200px;
-  background-color: red;
-`;
+const appCss = css``;
 
 export default App;

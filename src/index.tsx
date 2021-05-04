@@ -2,10 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RootStoreProvider } from '@/store/RootStore';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RootStoreProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </RootStoreProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
