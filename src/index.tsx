@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import { RootStoreProvider } from '@/store/RootStore';
 import { BrowserRouter } from 'react-router-dom';
 
+import './assets/scss/base.scss';
 import '@/config/lang/i18n';
 
 ReactDOM.render(
